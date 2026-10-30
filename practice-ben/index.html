@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- portal practice-ben live 0d7d9259 -->
+<!-- portal practice-ben live e6a0cdc0 -->
 <meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -122,6 +122,11 @@ h2.cond{font-size:clamp(46px,5.6vw,78px);margin:0 0 22px}
 .record-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
 .record-photo{border-radius:var(--r);overflow:hidden;max-width:620px;aspect-ratio:4/3.4}
 .record-photo img{width:100%;height:100%;object-fit:cover;object-position:45% 30%}
+.record-photos{display:grid;grid-template-columns:1.78fr .88fr;gap:16px;align-items:stretch;max-width:620px}
+.record-photos .record-photo{max-width:none;aspect-ratio:auto}
+.record-photos .record-photo:first-child{aspect-ratio:16/9;align-self:center}
+.record-photos .record-photo:last-child{aspect-ratio:1060/1205;align-self:center}
+.record-photos .record-photo:last-child img{max-width:1060px;object-position:50% 30%}
 .voice{font-size:21px;line-height:1.5;margin:0 0 22px;max-width:28em}
 .also{margin:0;font-size:16px;color:var(--muted);max-width:32em}
 .also b{color:var(--ink)}
@@ -486,8 +491,13 @@ footer p{margin:0}
   <section class="sec" id="record" aria-labelledby="record-h">
     <div class="wrap">
       <div class="record-grid">
-        <div class="record-photo">
-          <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147524686/images/0bd6131-7051-3ea7-4d72-f46476f324e_tempImageHAMiop.jpeg" alt="Ben Coomber at Performx Live, wearing a Freedom t-shirt" width="1280" height="720" loading="lazy">
+        <div class="record-photos">
+          <div class="record-photo">
+            <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147524686/images/0bd6131-7051-3ea7-4d72-f46476f324e_tempImageHAMiop.jpeg" alt="Ben Coomber at Performx Live, wearing a Freedom t-shirt" width="1280" height="720" loading="lazy">
+          </div>
+          <div class="record-photo">
+            <img src="uploads/dffa09ac-m1.jpg" alt="Ben Coomber on stage in a green armchair, arms raised as he speaks to the audience" width="1060" height="1205" loading="lazy">
+          </div>
         </div>
         <div>
           <p class="kicker">Track record</p>
